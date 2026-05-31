@@ -1,5 +1,7 @@
 #include "JsonParser.h"
 #include "JsonPrinter.h"
+#include "JsonNode.h"
+#include "JsonArray.h"
 
 #include <iostream>
 #include <fstream>
@@ -17,12 +19,21 @@ int main(int argc,char** argv)
         json += temp;
     }
 
-    file.close();
+    std::fstream output_file("output.json",std::ios::out);
 
     JsonParser parser(json);
 
-    JsonValue root =
-        parser.parse();
+    std::shared_ptr<JsonNode> root = std::get<std::shared_ptr<JsonNode>>(parser.parse());
 
-    std::cout << root << '\n';
+    std::shared_ptr<JsonArray> tempArr = std::make_shared<JsonArray>();
+    tempArr -> insert("1");
+    tempArr -> insert("2");
+    tempArr -> insert("3");
+
+    root -> set("Numbers",tempArr);
+
+    output_file << (JsonValue) root << '\n';
+
+    output_file.close();
+    file.close();
 }
