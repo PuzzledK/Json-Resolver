@@ -1,0 +1,4 @@
+experimentation
+/src/*.o
+*.o
+json
