@@ -2,3 +2,4 @@ experimentation
 /src/*.o
 *.o
 json
+*.json
