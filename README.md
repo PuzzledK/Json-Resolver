@@ -65,7 +65,3 @@ and will print:
 - The parser currently supports a simple JSON subset with proper whitespace handling.
 - String escape sequences are supported for common JSON escapes.
 - The printer formats objects and arrays with indentation for readability.
-
-## License
-
-No license is specified. Add a `LICENSE` file if you want to define usage terms.
