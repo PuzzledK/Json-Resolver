@@ -21,8 +21,6 @@ A lightweight C++ JSON parser and printer library with support for:
   - `JsonPrinter.cpp`
   - `JsonNode.cpp`
   - `JsonArray.cpp`
-- `json/` — sample JSON data or supporting files
-- `temp.json` — temporary JSON example file
 
 ## Build
 
