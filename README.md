@@ -1,8 +1,8 @@
-# Json Resolver
+# CSon
 
 A lightweight C++ JSON parser, printer, and small in-memory JSON library.
 
-Json Resolver can be used both as a standalone parser/printer (see `main.cpp`) and
+CSon can be used both as a standalone parser/printer (see `main.cpp`) and
 as an embeddable library for constructing, modifying, and printing JSON values
 programmatically from your C++ projects.
 
